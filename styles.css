@@ -15,31 +15,63 @@ body {
 }
 
 h1 {
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Lora';
     font-size: 36px;
     font-weight: bold;
     color: black;
     padding-top: 5.5rem;
+    text-align: center;
 }
 
 h2 {
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Lora';
     font-size: 24px;
     font-weight: bold;
     color: black;
 }
 
 p {
+    font-family: 'Lora';
     font-size: 18px;
     font-weight: normal;
-    font-style: italic;
-    color: gray;
+    color: black;
+}
+
+.intro {
+    text-align: center;
+}
+
+.author {
+    text-align: center;
+    font-weight: bold;
+}
+
+.main-text {
     padding-bottom: 1.5rem;
 }
 
 .main-container {
     max-width: 75%;
     margin: 0 auto;
+}
+
+.image-container {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    transform: translateX(-20px);
+}
+
+.image-container ul {
+    list-style: none;
+}
+
+.image {
+    max-width: 800px;
+}
+
+.credit {
+    font-weight: bold;
 }
 
 .primary-nav {
@@ -52,22 +84,26 @@ p {
     justify-content: center;
     position: fixed;
     top: 0;
-    background-color: green;
+    background-color: maroon;
+    z-index: 1;
 }
 
 .nav-header {
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Lora';
+    font-weight: bold;
     font-size: 40px;
     color: white;
     text-decoration: none;
 }
 
-.nav-header:hover {
-    text-decoration: underline;
-}
-
 @media (prefers-reduced-motion: no-preference) {
     html {
       scroll-behavior: smooth;
+    }
+}
+
+@media (width < 900px) {
+    .image {
+        width: 100%;
     }
 }
