@@ -87,6 +87,7 @@ p {
     top: 0;
     background-color: maroon;
     z-index: 1;
+    max-height: 100px;
 }
 
 .nav-header {
@@ -108,7 +109,7 @@ p {
         width: 100%;
     }
 
-    .intro {
-        margin-top: 400px;
+    .nav-header {
+        font-size: 30px;
     }
 }
