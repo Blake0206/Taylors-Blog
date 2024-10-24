@@ -107,4 +107,8 @@ p {
     .image {
         width: 100%;
     }
+
+    .intro {
+        margin-top: 200px;
+    }
 }
